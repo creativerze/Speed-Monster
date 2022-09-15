@@ -49,7 +49,7 @@ li a:hover:not(.active) {
   margin-bottom: 20px;
 }
 .background-color{
-  background-color: aquamarine;
+  background-color: rgb(114, 255, 208);
   padding: 5px;
 }
 .border-add{
@@ -67,7 +67,7 @@ p{
 }
 
 .footer-area{
-  margin-top: 60px;
+  margin-top: 65px;
 }
 .center {
   padding: 70px 0;
