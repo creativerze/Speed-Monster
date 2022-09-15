@@ -40,6 +40,12 @@ li a:hover:not(.active) {
   background-color: rgb(1, 70, 47);
 }
 
+.container{
+  border: 1px solid rgb(206, 206, 206);
+  border-top: 0;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
 .header-title{
   padding: 30px;
   text-align: center;
@@ -51,9 +57,10 @@ li a:hover:not(.active) {
 .background-color{
   background-color: rgb(114, 255, 208);
   padding: 5px;
+  border-radius: 5px;
 }
 .border-add{
-  border: 1px solid rgb(179, 177, 177);
+  /* border: 1px solid rgb(179, 177, 177); */
   margin: 5px 0;
   width: 50%;
   background-color: rgb(235, 234, 234);
@@ -63,7 +70,7 @@ p{
   padding: 10px;
 }
 .margin-field{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-area{
