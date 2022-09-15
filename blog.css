@@ -1,0 +1,38 @@
+/* =================================
+Blog section Start
+================================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex-field{
+  display: flex;
+  margin-bottom: 20px;
+}
+.background-color{
+  background-color: aquamarine;
+  padding: 5px;
+}
+.border-add{
+  border: 1px solid rgb(179, 177, 177);
+  margin: 5px 0;
+  width: 50%;
+  background-color: rgb(235, 234, 234);
+}
+p{
+  font-size: 19px;
+  padding: 10px;
+}
+.margin-field{
+  margin-bottom: 20px;
+}
+
+
+/* =================================
+Blog section End
+================================= */

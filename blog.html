@@ -1,14 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <h2>Blog Section</h2>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Section</title>
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Blog Section</h2>
+    </header>
+
+    <main>
+      <section class="box-container">
+        <!-- ----------------------------- -->
+        <div>
+          <h2 class="background-color">
+            01. Difference between local storage and session storage
+          </h2>
+          <div class="flex-field">
+            <p class="border-add">
+              <b>Local Storage:</b> <br />
+              This read-only interface property provides access to the
+              Document's local storage object, the stored data is stored across
+              browser sessions. Similar to sessionStorage, except that
+              localStorage data gets cleared when the page session ends - that
+              is when the page is closed. It is cleared when the last “private”
+              tab of a browser is closed (localStorage data for a document
+              loaded in a private browsing or incognito session).
+            </p>
+
+            <p class="border-add">
+              <b>Session Storage:</b> <br />
+              Session Storage objects can be accessed using the sessionStorage
+              read-only property. The difference between sessionStorage and
+              localStorage is that localStorage data does not expire, whereas
+              sessionStorage data is cleared when the page session ends.
+            </p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+
+        <!-- -------------------------- -->
+        <div>
+          <h2 class="background-color">
+            02. Difference between global scope and block scope
+          </h2>
+          <div class="flex-field">
+            <p class="border-add">
+              <b>The Global scope:</b> <br />
+              A variable exists inside or outside a block. If a variable is
+              declared outside all functions or curly braces ({}), it exists in
+              the global scope. The global variables can be accessed by any line
+              of code in the program, including inside blocks.
+            </p>
+
+            <p class="border-add">
+              <b>The Block scope:</b> <br />
+              So far, we've seen variables defined with the var keyword. Var can
+              declare a variable either in the global or local scope. The
+              variables that are declared within the block scope are comparable
+              to local ones. They are available within the block that they are
+              defined.
+            </p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- -------------------------- -->
+        <div>
+          <h2 class="background-color">
+            03. How does the JavaScript event loop work?
+          </h2>
+          <div class="margin-field">
+            <p class="border-add" style="width: 100%">
+              <b>Event Loop:</b> <br />We'll start with a somewhat of an odd
+              claim — despite allowing async JavaScript code (like the
+              setTimeout we just discussed), until ES6, JavaScript itself has
+              actually never had any direct notion of asynchronicity built into
+              it. The JavaScript engine has never done anything more than
+              executing a single chunk of your program at any given moment.
+              <br />
+              <br />
+              The Event Loop has one simple job — to monitor the Call Stack and
+              the Callback Queue. If the Call Stack is empty, the Event Loop
+              will take the first event from the queue and will push it to the
+              Call Stack, which effectively runs it. Such an iteration is called
+              a tick in the Event Loop.
+            </p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- -------------------------- -->
+        <div class="margin-field">
+          <h2 class="background-color">
+            04. How many ways to find undefined in JavaScript?
+          </h2>
+          <div>
+            <p class="border-add" style="width: 100%">
+              <b>Find undefined:</b> <br />In JavaScript and TypeScript there are
+              different methods for checking whether a variable is undefined.
+              However, some methods are better than others. After reading this,
+              you will never check undefined in the same way again!
+              <br />
+              variable === undefined The first solution, which is also the more
+              used, compare directly the variable value with the built-in global
+              identifier undefined which is worthing the value undefined.
+              <br />
+              typeof variable === 'undefined' The second solution is to use the
+              typeof operator. Widely used, it's only cons is its verbosity — 18
+              characters. <br />
+              variable === void 0 The third and last solution is to use the void
+              operator. Used along 0, it allows to perform the check using 6
+              characters only without no other cons that having to be known.
+            </p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+      </section>
+    </main>
+    
+  </body>
 </html>
